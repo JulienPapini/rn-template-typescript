@@ -1,29 +1,33 @@
 {
-  "name": "react-native-template-typescript",
-  "version": "0.0.1",
-  "description": "Clean and minimalist React Native template for a quick start with TypeScript.",
-  "scripts": {
-    "prepublishOnly": "npm --no-git-tag-version version $TRAVIS_TAG"
-  },
-  "files": [
-    "template",
-    "template.config.js"
+  "name": "@julienpapini/react-native-template-typescript",
+  "version": "0.63.0",
+  "description": "Custom typescript template for React Native",
+  "contributors": [
+    {
+      "name": "Julien Papini",
+      "email": "julien.papini@gmail.com"
+    }
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emin93/react-native-template-typescript.git"
+    "url": "git+https://github.com/JulienPapini/rn-template-typescript.git"
   },
+  "bugs": {
+    "url": "https://github.com/JulienPapini/rn-template-typescript/issues"
+  },
+  "homepage": "https://github.com/JulienPapini/rn-template-typescript#readme",
+  "license": "MIT",
   "keywords": [
     "react-native",
     "typescript",
     "jest",
     "template",
-    "boilerplate"
+    "boilerplate",
+    "custom"
   ],
-  "author": "Emin Khateeb <emin@emin.ch>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/emin93/react-native-template-typescript/issues"
-  },
-  "homepage": "https://github.com/emin93/react-native-template-typescript#readme"
+  "scripts": {},
+  "files": [
+    "template",
+    "template.config.js"
+  ]
 }
