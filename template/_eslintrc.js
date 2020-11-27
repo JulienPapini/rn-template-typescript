@@ -11,4 +11,33 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
+  plugins: ['simple-import-sort'],
+  rules: {
+    'sort-imports': 'off',
+    'import/order': 'off',
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error',
+    'import/prefer-default-export': 'off',
+    'simple-import-sort/imports': [
+      'error',
+      {
+        groups: [
+          // Packages. `react` related packages come first.
+          ['^react', '^@?\\w'],
+          // Internal packages.
+          ['^@app(/.*|$)'],
+          // Side effect imports.
+          ['^\\u0000'],
+          // Parent imports. Put `..` last.
+          ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
+          // Other relative imports. Put same-folder imports and `.` last.
+          ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+          // Style imports.
+          ['^.+\\.styles$'],
+        ],
+      },
+    ],
+    'simple-import-sort/exports': 'error',
+  },
 };
