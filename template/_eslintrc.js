@@ -11,7 +11,12 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
-  plugins: ['simple-import-sort'],
+  plugins: ['simple-import-sort', 'import', 'module-resolver'],
+  settings: {
+    'import/resolver': {
+      'babel-module': {},
+    },
+  },
   rules: {
     'sort-imports': 'off',
     'import/order': 'off',
@@ -39,5 +44,12 @@ module.exports = {
       },
     ],
     'simple-import-sort/exports': 'error',
+    'module-resolver/use-alias': [
+      'error',
+      {
+        ignoreDepth: 2,
+        allowDepthMoreOrLessThanEquality: true,
+      },
+    ],
   },
 };
