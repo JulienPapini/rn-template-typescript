@@ -1,62 +1,52 @@
-# :space_invader: React Native Template TypeScript
+# React Native - Typescript template <!-- omit in toc -->
 
-<p>
-  <a href="https://travis-ci.org/react-native-community/react-native-template-typescript">
-    <img alt="Build Status" src="https://img.shields.io/travis/react-native-community/react-native-template-typescript.svg" target="_blank" />
-  </a>
-  <a href="https://github.com/react-native-community/react-native-template-typescript#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
-  </a>
-  <a href="https://github.com/react-native-community/react-native-template-typescript/graphs/commit-activity">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" target="_blank" />
-  </a>
-  <a href="https://github.com/react-native-community/react-native-template-typescript/blob/master/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
-  </a>
-</p>
+Custom typescript template for React Native.
 
-> Clean and minimalist React Native template for a quick start with TypeScript.
+# Table of contents <!-- omit in toc -->
 
-## :star: Features
+- [1. Project information](#1-project-information)
+- [2. Features](#2-features)
+- [3. Usage](#3-usage)
+  - [3.1. Usage with latest version of React Native](#31-usage-with-latest-version-of-react-native)
+  - [3.2. Usage with older versions of React Native](#32-usage-with-older-versions-of-react-native)
+- [4. Contributors](#4-contributors)
 
-- Elegant usage directly within the [React Native CLI](https://github.com/react-native-community/cli)
-- Consistent with the default React Native template
-- Minimal additional dependencies
+# 1. Project information
 
-## :arrow_forward: Usage
+- Tag: **RN**
+- Type: **Scripting, Template, Boilerplate, Configuration**
+- Languages: **Typescript, Javascript**
+- Forked from: **[react-native-community/react-native-template-typescript](https://github.com/react-native-community/react-native-template-typescript)**
+- Base ref: **refs/tags/6.5.8**
+- Package: **[@julienpapini/react-native-template-typescript](https://www.npmjs.com/package/@julienpapini/react-native-template-typescript)**
+- React Native version: **0.63**
 
-```sh
-npx react-native init MyApp --template react-native-template-typescript
+# 2. Features
+
+# 3. Usage
+
+## 3.1. Usage with latest version of React Native
+
+```bash
+$ npx react-native init ProjectName \
+  --template @julienpapini/react-native-template-typescript \
+  --npm \
+  --directory "rn-project-name" \
+  --title "Project name"
 ```
 
-### Usage with older versions of React Native
+## 3.2. Usage with older versions of React Native
 
-#### e.g. `react-native@0.62.x`
+e.g. `react-native@0.62.x`
 
-```sh
-npx react-native init MyApp --template react-native-template-typescript@6.4.*
+```bash
+$ npx react-native init ProjectName \
+  --template @julienpapini/react-native-template-typescript@0.62.* \
+  --npm \
+  --directory "rn-project-name" \
+  --title "Project name"
 ```
 
-See the below table to find out which version of the template to use.
+# 4. Contributors
 
-#### React Native <=> Template Version
-
-| React Native  	| Template  	|
-|---	            |---	        |
-| 0.63  	        | 6.5.*       |
-| 0.62  	        | 6.4.*       |
-| 0.61  	        | 6.3.*       |
-| 0.60  	        | 6.2.*       |
-
-### Note on the legacy CLI
-There seems to be quite some confusion about the legacy CLI. This template only works with the new CLI. Make sure you have uninstalled the legacy `react-native-cli` first (`npm uninstall -g react-native-cli`), for the below command to work. If you wish to not use `npx`, you can also install the new CLI globally (`npm i -g @react-native-community/cli` or `yarn global add @react-native-community/cli`).
-
-Further information can be found here: https://github.com/react-native-community/cli#about
-
-## :computer: Contributing
-
-Contributions are very welcome. Please check out the [contributing document](CONTRIBUTING.md).
-
-## :bookmark: License
-
-This project is [MIT](LICENSE) licensed.
+- [Julien Papini](mailto:julien.papini@gmail.com)
